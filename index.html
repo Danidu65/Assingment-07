@@ -34,7 +34,7 @@
 
 <!--    ///////////////////////////////////DASHBOARD//////////////////////////////////////////-->
 
-    <section>
+    <section id="dashboard-section" class="container">
 
         <div>
             <h1 id="h1">POS SYSTEM</h1>
@@ -46,108 +46,109 @@
 
     <section id="customer-section" class="container">
 
-    <div class="row justify-content-md-center mb-4">
-        <div class="col col-lg-10 col-12">
-            <form class="d-flex" role="search">
-                <input id="search" class="form-control me-2" type="search" placeholder="Search Customer" aria-label="Search">
-                <i class="fa-solid fa-magnifying-glass search-btn"></i>
-            </form>
+        <div class="row justify-content-md-center mb-4">
+            <div class="col col-lg-10 col-12">
+                <form class="d-flex" role="search">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search Customer" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass search-btn"></i>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <div class="customer">
-        <div class="C-Content">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
-                        <div class="sc-card">
+<!--        <div class="customer">-->
+            <div class="C-Content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                            <div class="sc-card">
 
-                            <div class="mb-3 col-lg-12 col-md-4">
-                                <label for="id" class="form-label">Customer ID</label>
-                                <input type="text" class="form-control" id="customer_Id" placeholder="C001">
-                            </div>
-                            <div class="mb-3 col-lg-12 col-md-8">
-                                <label for="name" class="form-label">Customer Name</label>
-                                <input type="text" class="form-control" id="customer_Name">
-                            </div>
-                            <div class="mb-3 col-lg-12 col-md-8">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="customer_Address">
-                            </div>
-                            <div class="mb-3 col-lg-12 col-md-4">
-                                <label for="salary" class="form-label">Salary</label>
-                                <input type="number" class="form-control" id="customer_Salary" placeholder="Rs: 000000.00">
-                            </div>
+                                <div class="mb-3 col-lg-12 col-md-4">
+                                    <label for="id" class="form-label">Customer ID</label>
+                                    <input type="text" class="form-control" id="id" placeholder="C001">
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-8">
+                                    <label for="name" class="form-label">Customer Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-8">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+                                <div class="mb-3 col-lg-12 col-md-4">
+                                    <label for="salary" class="form-label">Salary</label>
+                                    <input type="number" class="form-control" id="salary" placeholder="Rs: 000000.00">
+                                </div>
 
-                            <div class="sc-card-content">
-                                <button type="submit" class="btn btn-success mb-1">Save</button>
-                                <button type="button" class="btn btn-primary mb-1">Update</button>
-                                <button type="button" class="btn btn-danger mb-1">Delete</button>
-                            </div>
+                                <div class="sc-card-content">
+                                    <button type="submit" class="btn btn-success mb-1">Save</button>
+                                    <button type="button" class="btn btn-primary mb-1">Update</button>
+                                    <button type="button" class="btn btn-danger mb-1">Delete</button>
+                                </div>
 
+                            </div>
                         </div>
+
                     </div>
+                    <div class="row">
+                        <div class="col col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="search-cus-table">
+                            <table class="table">
+                                <thead class="table-light">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Salary</th>
+                                    <th scope="col">Address</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Danidu</td>
+                                    <td>1000000</td>
+                                    <td>Horana</td>
+                                </tr>
 
-                </div>
-                <div class="row">
-                    <div class="col col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="search-customer-table">
-                        <table class="table">
-                            <thead class="table-light">
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Salary</th>
-                                <th scope="col">Address</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Danidu</td>
-                                <td>1000000</td>
-                                <td>Horana</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Danidu</td>
+                                    <td>1000000</td>
+                                    <td>Horana</td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Danidu</td>
-                                <td>1000000</td>
-                                <td>Horana</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Danidu</td>
+                                    <td>1000000</td>
+                                    <td>Horana</td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Danidu</td>
-                                <td>1000000</td>
-                                <td>Horana</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Danidu</td>
+                                    <td>1000000</td>
+                                    <td>Horana</td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Danidu</td>
-                                <td>1000000</td>
-                                <td>Horana</td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Danidu</td>
-                                <td>1000000</td>
-                                <td>Horana</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Danidu</td>
+                                    <td>1000000</td>
+                                    <td>Horana</td>
+                                </tr>
 
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr>
-    </div>
+            <hr>
+<!--        </div>-->
+
     </section>
 
-<!--    //////////////////////////////////////////////////////ITEM/////////////////////////////////////////////////////////////////////-->
+<!--&lt;!&ndash;    //////////////////////////////////////////////////////ITEM/////////////////////////////////////////////////////////////////////&ndash;&gt;-->
 
 <section id="item-section" class="container">
 
@@ -160,7 +161,7 @@
         </div>
     </div>
 
-    <div class="customer">
+    <div class="item">
         <div class="C-Content">
             <div class="container">
                 <div class="row">
@@ -169,7 +170,7 @@
 
                             <div class="mb-3 col-lg-12 col-md-4">
                                 <label for="id" class="form-label">Item ID</label>
-                                <input type="text" class="form-control" id="item_Id" placeholder="C001">
+                                <input type="text" class="form-control" id="item_Id" placeholder="I001">
                             </div>
                             <div class="mb-3 col-lg-12 col-md-8">
                                 <label for="name" class="form-label">Item Name</label>
@@ -283,19 +284,19 @@
             <form action="" class="row">
                 <div class="mb-3 col-lg-2 col-md-4 col-12">
                     <label for="id" class="form-label">Customer ID</label>
-                    <input type="text" class="form-control" id="Order_Id" placeholder="C001">
+                    <input type="text" class="form-control" id="id" placeholder="C001">
                 </div>
                 <div class="mb-3 col-lg-4 col-md-8 col-12">
                     <label for="name" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="order_name">
+                    <input type="text" class="form-control" id="name">
                 </div>
                 <div class="mb-3 col-lg-4 col-md-8 col-12">
                     <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="aaddress">
+                    <input type="text" class="form-control" id="address">
                 </div>
                 <div class="mb-3 col-lg-2 col-md-4 col-12">
                     <label for="salary" class="form-label">Salary</label>
-                    <input type="number" class="form-control" id="asalary" placeholder="Rs: 000000.00">
+                    <input type="number" class="form-control" id="salary" placeholder="Rs: 000000.00">
                 </div>
             </form>
         </div>
@@ -308,7 +309,7 @@
             <form action="" class="row">
                 <div class="mb-3 col-lg-2 col-md-4 col-12">
                     <label for="id" class="form-label">Item ID</label>
-                    <input type="text" class="form-control" id="id" placeholder="C001">
+                    <input type="text" class="form-control" id="id" placeholder="I001">
                 </div>
                 <div class="mb-3 col-lg-4 col-md-8 col-12">
                     <label for="name" class="form-label">Item Name</label>
@@ -409,7 +410,7 @@
         displayNoneSections();
         $("#dashboard-section").css("display", "block");
 
-        $("#dashboard").on('click', () => {
+        $("#dashborad").on('click', () => {
             displayNoneSections();
             $("#dashboard-section").css("display", "block");
         });
